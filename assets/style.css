@@ -1,0 +1,138 @@
+ 
+ /* General styling */
+
+h2{
+    margin:30px 0px 10px 0px;
+    padding:150px 0px 10px 0px;
+    text-align: center;
+}
+hr{
+    border: none;
+    color:whitesmoke; /* old IE */
+    background-color: whitesmoke; /* Modern Browsers */
+}
+
+
+ /* These are the two backgrounds depending on the event */
+ .home{
+    background-image: url("images/initiate.jpg");
+    background-size: 100%;
+    /* background-repeat:no-repeat; */
+
+  }
+
+  .fight{
+    background-image: url("images/fight.jpg");
+    background-size: 100%;
+  }
+/* This is the main menu options */
+    .menu-btn , .stageLabel, .defenderTitle, .playerTitle{
+        font-size:50px;
+        background-color: Transparent;
+        border: none;
+        outline:none;
+        /* give stroke to the lettering in most browsers */
+        -webkit-text-stroke: 1px black;
+    }
+    .menu-btn:hover{
+        font-size:52px;
+        cursor:pointer;
+    }
+    .stageLabel:hover{
+        cursor: default;
+    }
+    .defenderTitle{
+        text-align:left;
+    }
+    .playerTitle{
+        text-align:right;
+    }
+    .rules-data,.menu-btn, .stageLabel{
+        text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+    .rules-data{
+        font-size: 20px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+/* This is for image formatting of players. 
+*/
+    .playerMain{
+        width: 100%;
+        height: 100%;
+        border-radius: 45px 45px 45px 45px;
+        -moz-border-radius: 45px 45px 45px 45px;
+        -webkit-border-radius: 45px 45px 45px 45px;
+    }
+ 
+      .img-mod{
+        float:left;
+      }
+        
+      .img-format{
+          /* position text */
+        position: relative;
+        text-align: center;
+
+        width: 175px;
+        height: 175px;
+        border-radius: 50px 50px 50px 50px;
+        -moz-border-radius: 50px 50px 50px 50px;
+        -webkit-border-radius: 50px 50px 50px 50px;
+        border: 4px solid purple;
+        margin: 2px;
+      }
+      .img-format:hover{
+        margin: 2px;
+        cursor: pointer;
+        opacity: .8;
+        border: 4px solid blue;
+      }
+      .capt-mod {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+/* For players in position */
+
+
+/* attack button */
+.fa{
+    color:Orange;   
+}
+
+.fa:hover{
+    font-size:120px;
+    color:red;
+    cursor:pointer;
+
+}
+/* 1) Attacker */
+.Attacker{
+    float:right;
+}
+.Defender{
+    float:right;
+}
+#attackHealth{
+    float:right;
+}
+#defendHealth{
+    float:left;
+
+}
+/* .defender-format{
+    margin-right:10%;
+} */
+
+/* 3) Waitlist */
+ .Waitlist{
+    margin-top:5%;
+
+ } 
+
